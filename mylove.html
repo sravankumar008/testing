@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Confession Slideshow</title>
+    <style>
+        /* Styles for slideshow */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styles for narrative */
+        .narrative {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for form */
+        .quiz-form {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .quiz-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .quiz-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .quiz-form input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quiz-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <a href="https://ibb.co/WD275xy"><img src="https://i.ibb.co/jVrqf6M/BAHHBAHB.jpg" alt="BAHHBAHB"
+                    border="0"></a>
+
+        </div>
+
+        <div class="mySlides">
+            <a href="https://ibb.co/yPWZp3b"><img
+                    src="https://i.ibb.co/F3gyXPj/12b2cccb-2969-4753-841c-d7247f0a1ade.jpg"
+                    alt="12b2cccb-2969-4753-841c-d7247f0a1ade" border="0"></a>
+        </div>
+
+        <div class="mySlides">
+
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/b78n3FH/4df091c1ae91ef297aa26021e1611e06.jpg"
+                    alt="4df091c1ae91ef297aa26021e1611e06" border="0"></a>
+
+        </div>
+
+
+        <div class="mySlides">
+
+            <div class="mySlides">
+
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/b78n3FH/4df091c1ae91ef297aa26021e1611e06.jpg"
+                        alt="4df091c1ae91ef297aa26021e1611e06" border="0"></a>
+
+            </div>
+
+            
+
+
+
+            </div>
+
+        <!-- Add more slides with images -->
+
+        <button onclick="plusSlides(-1)">❮ Prev</button>
+        <button onclick="plusSlides(1)">Next ❯</button>
+    </div>
+
+    <div class="narrative">
+        <h2>My Love Confession</h2>
+        <p>It all started on a warm summer evening, the sun setting in hues of orange and pink. As I walked hand in hand
+            with you, the gentle breeze carrying the scent of jasmine, I knew that this moment was perfect, just like
+            you. My heart raced with every step, the words I longed to say swirling in my mind.</p>
+        <p>Finally, as we sat beneath the twinkling stars, I gathered my courage and poured out my feelings. I told you
+            how your laughter lights up my world, how your smile is the beacon of hope in my darkest days. I confessed
+            how every moment spent with you feels like a treasure, and how deeply I've fallen in love with you.</p>
+        <p>Your eyes sparkled with emotion as you listened, and when I finally uttered those three little words - "I
+            love you" - the world seemed to stand still. And then, with tears of joy glistening in your eyes, you
+            whispered those same words back to me, sealing our love in that magical moment forever.</p>
+    </div>
+
+    <div class="quiz-form">
+        <form action="https://sravanyadgarpally12@gmail.com" method="POST">
+            <label for="name">whats your favourite food:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">who is your favourie actor in tollywood:</label>
+            <input type="text" id="tollywood" name="tollywood" required>
+
+            <label for="name">who is your favourite actress:</label>
+            <input type="text" id="actress" name="actress" required>
+
+            <label for="name">what kinda dresses do you like:</label>
+            <input type="text" id="dress" name="dress" required>
+
+            <label for="name">how do you define love accoring to you :</label>
+            <input type="text" id="love" name="love" required>
+
+            <label for="name">whats your dream place to be:</label>
+            <input type="text" id="place" name="place" required>
+
+            <label for="age">how many kids you are expecting to have?</label>
+            <input type="text" id="age" name="age" required>
+
+            <label for="fav_color">Your Favorite Color:</label>
+            <input type="text" id="fav_color" name="fav_color" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>
